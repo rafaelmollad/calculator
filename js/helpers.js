@@ -54,22 +54,6 @@ const operate = (n1, n2, operation) => {
   }
 };
 
-// Deletes a digit
-const deleteDigit = () => {
-  if (bigDisplay) {
-    // Convert bigDisplay to array
-    bigDisplayArr = bigDisplay.split("");
-
-    // Delete last digit
-    bigDisplayArr.pop();
-
-    // Convert array to string and update bigDisplay
-    bigDisplay = bigDisplayArr.join("");
-
-    bigDisplayArr.length > 0 ? setBigDisplay(bigDisplay) : setBigDisplay("0");
-  }
-};
-
 // Reset everything
 const clear = () => {
   bigDisplay = "";
